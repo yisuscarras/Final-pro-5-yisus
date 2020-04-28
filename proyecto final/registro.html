@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+	<title> Formulario de registro </title> <!--titulo de la pagina--> <!--Esta pagina es para que tanto clientes como trabajadores se registren-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">  <!--para centrar el menu-->
+
+	<link rel="stylesheet" href="estilofor.css">
+</head>
+
+<body>
+	<h1>Registro</h1>
+	<form action="registrar.php" method="post" class="form-register">
+		<h2 class="form__titulo" >Crear una cuenta</h2>
+		<div class=".contenedor-inputs">
+			<input type="text" name="nombre" placeholder="Nombre" class="input-48" required> <!--cada input es para ingresar los datos en los campos, este es el campo nombre-->
+			<input type="text" name="apellidos" placeholder="Apellidos" class="input-48" required><!--este es el campo apellidos-->
+			<input type="email" name="correo" placeholder="Correo" class="input-100" required> <!--este es el campo correo-->
+			<input type="text" name="usuario" placeholder="Usuario" class="input-48" required> <!--este es el campo usuario-->
+			<input type="password" name="clave" placeholder="Contraseña" class="input-48" required> <!--este es el campo clave-->
+			<input type="text" name="telefono" placeholder="telefono" class="input-100" required> <!--este es el campo telefono-->
+			<input type="text" name="rol" placeholder="Rol (de ser cliente escrciba cliente en este campo)" class="input-48" required> <!--este es el campo rol-->
+			<input type="submit" value="registrar" class="btn-enviar" required> <!--para registrar los datos escritos, el required en cada input es para no continuar con el registro si queda un campo vacio--> 
+			<!--Nota este ultimo input puede presentar problemas-->
+
+			<p class="form__link">
+				Ya tienes una cuenta ? <a href="menu inicial.html"> Ingresa aqui </a> <!--Opcion para ingresar con su cuenta ya creada-->
+			</p>
+		</div>
+	</form>
+
+
+</body>
+</html>
